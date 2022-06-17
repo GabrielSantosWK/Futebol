@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(243, 243, 243);
+    width: 100vw;;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+header{
+    height: 10vh;
+    background-color: white;
+}
+.header-itens ul{
+    display: flex;
+}
+.header-itens ul li{
+    margin-left: 5px;
+}
+.lista-classificacao{
+    height:90vh;
+    
+    padding: 0 10px;
+}
+.lista-item{
+    height: 50px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(190, 190, 190);    
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+.lista-item .posicao{
+    width: 25%;
+    display: flex;
+}
+.nome-time{
+    margin-left: 5px;
+}
+.lista-item .dados{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
