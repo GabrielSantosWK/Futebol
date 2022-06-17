@@ -24,10 +24,6 @@ object ViewPrincipal: TViewPrincipal
     ParentBackground = False
     ShowCaption = False
     TabOrder = 0
-    ExplicitLeft = 424
-    ExplicitTop = 216
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object pnlTop: TPanel
       Left = 0
       Top = 0
@@ -37,7 +33,6 @@ object ViewPrincipal: TViewPrincipal
       BevelOuter = bvNone
       ShowCaption = False
       TabOrder = 0
-      ExplicitTop = -6
     end
     object pnlBaseNavMain: TPanel
       Left = 0
@@ -48,9 +43,6 @@ object ViewPrincipal: TViewPrincipal
       BevelOuter = bvNone
       ShowCaption = False
       TabOrder = 1
-      ExplicitTop = 8
-      ExplicitWidth = 624
-      ExplicitHeight = 41
       object pnlNav: TPanel
         Left = 0
         Top = 0
@@ -58,13 +50,39 @@ object ViewPrincipal: TViewPrincipal
         Height = 400
         Align = alLeft
         BevelOuter = bvNone
-        Color = 12965311
+        Color = clMedGray
         ParentBackground = False
         ShowCaption = False
         TabOrder = 0
-        ExplicitLeft = 1
-        ExplicitTop = 1
-        ExplicitHeight = 398
+        ExplicitLeft = -6
+        ExplicitTop = -20
+        object Panel1: TPanel
+          Left = 0
+          Top = 0
+          Width = 208
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'TIMES'
+          TabOrder = 0
+          ExplicitLeft = 32
+          ExplicitTop = 112
+          ExplicitWidth = 185
+          object Panel2: TPanel
+            Left = 0
+            Top = 39
+            Width = 208
+            Height = 2
+            Align = alBottom
+            BevelOuter = bvNone
+            Color = clBlack
+            ParentBackground = False
+            TabOrder = 0
+            ExplicitLeft = 1
+            ExplicitTop = -1
+            ExplicitWidth = 206
+          end
+        end
       end
       object pnlMain: TPanel
         Left = 208
@@ -73,12 +91,10 @@ object ViewPrincipal: TViewPrincipal
         Height = 400
         Align = alClient
         BevelOuter = bvNone
+        Color = clSilver
+        ParentBackground = False
         ShowCaption = False
         TabOrder = 1
-        ExplicitLeft = 0
-        ExplicitTop = 8
-        ExplicitWidth = 645
-        ExplicitHeight = 41
       end
     end
   end

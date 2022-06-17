@@ -13,6 +13,8 @@ type
     pnlBaseNavMain: TPanel;
     pnlNav: TPanel;
     pnlMain: TPanel;
+    Panel1: TPanel;
+    Panel2: TPanel;
   private
     { Private declarations }
   public

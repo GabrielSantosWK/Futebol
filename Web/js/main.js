@@ -14,6 +14,8 @@ const item = `<div class="lista-item">
     <p data-sg>0</p>
 </div>
 </div>  `;
+
+
 function adicionarItens(){
   let lista = document.querySelector(".lista-classificacao");
   lista.insertAdjacentHTML('beforeend',item)
@@ -23,4 +25,14 @@ function criarLista(){
         adicionarItens();
     }
 }
+
+function getTime(){
+    fetch('http://192.168.237.134:9000/times')
+    .then(function(response) {
+    return response.json();
+    }).then((response=>{
+        console.log(response.DATA);
+    }));
+}
 criarLista();
+getTime();
