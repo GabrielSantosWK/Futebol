@@ -1,0 +1,85 @@
+object ViewPrincipal: TViewPrincipal
+  Left = 0
+  Top = 0
+  ClientHeight = 441
+  ClientWidth = 645
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poScreenCenter
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 15
+  object pnlBase: TPanel
+    Left = 0
+    Top = 0
+    Width = 645
+    Height = 441
+    Align = alClient
+    BevelOuter = bvNone
+    Color = 15921906
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 0
+    ExplicitLeft = 424
+    ExplicitTop = 216
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object pnlTop: TPanel
+      Left = 0
+      Top = 0
+      Width = 645
+      Height = 41
+      Align = alTop
+      BevelOuter = bvNone
+      ShowCaption = False
+      TabOrder = 0
+      ExplicitTop = -6
+    end
+    object pnlBaseNavMain: TPanel
+      Left = 0
+      Top = 41
+      Width = 645
+      Height = 400
+      Align = alClient
+      BevelOuter = bvNone
+      ShowCaption = False
+      TabOrder = 1
+      ExplicitTop = 8
+      ExplicitWidth = 624
+      ExplicitHeight = 41
+      object pnlNav: TPanel
+        Left = 0
+        Top = 0
+        Width = 208
+        Height = 400
+        Align = alLeft
+        BevelOuter = bvNone
+        Color = 12965311
+        ParentBackground = False
+        ShowCaption = False
+        TabOrder = 0
+        ExplicitLeft = 1
+        ExplicitTop = 1
+        ExplicitHeight = 398
+      end
+      object pnlMain: TPanel
+        Left = 208
+        Top = 0
+        Width = 437
+        Height = 400
+        Align = alClient
+        BevelOuter = bvNone
+        ShowCaption = False
+        TabOrder = 1
+        ExplicitLeft = 0
+        ExplicitTop = 8
+        ExplicitWidth = 645
+        ExplicitHeight = 41
+      end
+    end
+  end
+end
