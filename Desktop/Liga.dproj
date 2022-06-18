@@ -102,7 +102,18 @@
         </DelphiCompile>
         <DCCReference Include="src\View\View.Principal.pas">
             <Form>ViewPrincipal</Form>
+        </DCCReference>
+        <DCCReference Include="src\View\Time\View.Time.pas">
+            <Form>Form1</Form>
+        </DCCReference>
+        <DCCReference Include="src\View\Base\View.Base.Item.pas">
+            <Form>ViewBaseItem</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\View\Time\View.Time.Item.Lista.pas">
+            <Form>ViewTimeItemLista</Form>
             <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
@@ -934,9 +945,9 @@
                 <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="OSX64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="Android64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="OSXARM64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Android64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
