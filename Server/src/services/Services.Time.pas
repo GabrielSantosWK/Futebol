@@ -14,10 +14,10 @@ type
   TServiceTime = class(TProvidersCadastro)
     qryPesquisaid: TIntegerField;
     qryPesquisanome: TWideStringField;
-    qryPesquisacategoria: TWideStringField;
+    qryPesquisacidade: TIntegerField;
     qryCadastroid: TIntegerField;
     qryCadastronome: TWideStringField;
-    qryCadastrocategoria: TWideStringField;
+    qryCadastrocidade: TIntegerField;
   private
     { Private declarations }
   public

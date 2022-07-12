@@ -21,8 +21,6 @@ object Form1: TForm1
     BevelOuter = bvNone
     ShowCaption = False
     TabOrder = 0
-    ExplicitTop = 224
-    ExplicitHeight = 217
     object ScrollBox: TScrollBox
       Left = 0
       Top = 0
@@ -33,7 +31,16 @@ object Form1: TForm1
       BevelOuter = bvNone
       BorderStyle = bsNone
       TabOrder = 0
-      ExplicitHeight = 217
+      object Memo1: TMemo
+        Left = 0
+        Top = 0
+        Width = 624
+        Height = 272
+        Align = alClient
+        Lines.Strings = (
+          'Memo1')
+        TabOrder = 0
+      end
     end
   end
   object Panel2: TPanel
@@ -56,5 +63,28 @@ object Form1: TForm1
       TabOrder = 0
       Text = 'Edit1'
     end
+    object Button1: TButton
+      Left = 368
+      Top = 64
+      Width = 75
+      Height = 25
+      Caption = 'Button1'
+      TabOrder = 1
+      OnClick = Button1Click
+    end
+  end
+  object HorseClientConnection1: THorseClientConnection
+    Authentication = HorseClientAuthentication1
+    Resourse = 'times'
+    OnAfterGet = HorseClientConnection1AfterGet
+    Left = 192
+    Top = 225
+  end
+  object HorseClientAuthentication1: THorseClientAuthentication
+    Protocol = Http
+    Server = '127.0.0.1'
+    Port = 9000
+    Left = 416
+    Top = 233
   end
 end

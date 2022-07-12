@@ -54,8 +54,6 @@ object ViewPrincipal: TViewPrincipal
         ParentBackground = False
         ShowCaption = False
         TabOrder = 0
-        ExplicitLeft = -6
-        ExplicitTop = -20
         object Panel1: TPanel
           Left = 0
           Top = 0
@@ -65,9 +63,7 @@ object ViewPrincipal: TViewPrincipal
           BevelOuter = bvNone
           Caption = 'TIMES'
           TabOrder = 0
-          ExplicitLeft = 32
-          ExplicitTop = 112
-          ExplicitWidth = 185
+          OnDblClick = Panel1DblClick
           object Panel2: TPanel
             Left = 0
             Top = 39
@@ -78,9 +74,6 @@ object ViewPrincipal: TViewPrincipal
             Color = clBlack
             ParentBackground = False
             TabOrder = 0
-            ExplicitLeft = 1
-            ExplicitTop = -1
-            ExplicitWidth = 206
           end
         end
       end

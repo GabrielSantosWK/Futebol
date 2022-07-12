@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Horse.Client.Authentication, Horse.Client.Connection;
 
 type
   TForm1 = class(TForm)
@@ -12,6 +13,12 @@ type
     ScrollBox: TScrollBox;
     Panel2: TPanel;
     Edit1: TEdit;
+    Button1: TButton;
+    HorseClientConnection1: THorseClientConnection;
+    HorseClientAuthentication1: THorseClientAuthentication;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+    procedure HorseClientConnection1AfterGet(Sender: TObject);
   private
     procedure ClearLista();
     procedure CreateItens();
@@ -28,6 +35,11 @@ implementation
 
 { TForm1 }
 
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  HorseClientConnection1.Get();
+end;
+
 procedure TForm1.ClearLista;
 var
   I: Integer;
@@ -42,6 +54,11 @@ end;
 procedure TForm1.CreateItens;
 begin
 
+end;
+
+procedure TForm1.HorseClientConnection1AfterGet(Sender: TObject);
+begin
+  Memo1.Lines.Add(HorseClientConnection1.ToJSON);
 end;
 
 end.

@@ -10,17 +10,16 @@ inherited ServiceTime: TServiceTime
     object qryPesquisaid: TIntegerField
       FieldName = 'id'
       Origin = 'id'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
     end
     object qryPesquisanome: TWideStringField
       FieldName = 'nome'
       Origin = 'nome'
       Size = 8190
     end
-    object qryPesquisacategoria: TWideStringField
-      FieldName = 'categoria'
-      Origin = 'categoria'
-      FixedChar = True
-      Size = 1
+    object qryPesquisacidade: TIntegerField
+      FieldName = 'cidade'
+      Origin = 'cidade'
     end
   end
   inherited qryRecordCount: TFDQuery
@@ -34,17 +33,16 @@ inherited ServiceTime: TServiceTime
     object qryCadastroid: TIntegerField
       FieldName = 'id'
       Origin = 'id'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
     end
     object qryCadastronome: TWideStringField
       FieldName = 'nome'
       Origin = 'nome'
       Size = 8190
     end
-    object qryCadastrocategoria: TWideStringField
-      FieldName = 'categoria'
-      Origin = 'categoria'
-      FixedChar = True
-      Size = 1
+    object qryCadastrocidade: TIntegerField
+      FieldName = 'cidade'
+      Origin = 'cidade'
     end
   end
 end
