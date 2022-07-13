@@ -12,7 +12,9 @@ uses
   Controllers.Time in 'src\controllers\Controllers.Time.pas',
   Services.Time in 'src\services\Services.Time.pas' {ServiceTime: TDataModule},
   Services.Usuario in 'src\services\Services.Usuario.pas' {ServiceUsuario: TDataModule},
-  Controllers.Usuario in 'src\controllers\Controllers.Usuario.pas';
+  Controllers.Usuario in 'src\controllers\Controllers.Usuario.pas',
+  Controllers.Rodada in 'src\controllers\Controllers.Rodada.pas',
+  Services.Rodada in 'src\services\Services.Rodada.pas' {ProvidersRodada: TDataModule};
 
 begin
   THorse
